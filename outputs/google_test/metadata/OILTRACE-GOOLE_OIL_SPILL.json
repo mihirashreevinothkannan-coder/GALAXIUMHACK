@@ -1,0 +1,269 @@
+{
+  "contract_version": "1.0",
+  "incident_id": "OILTRACE-GOOLE_OIL_SPILL",
+  "source_image": "goole_oil_spill.jpg",
+  "detection_status": "candidate_slick_detected",
+  "detection_method": "classical_sar_backscatter_adaptive",
+  "method_details": {
+    "requested_method": "classical",
+    "speckle_filter": "linear_intensity_multilook_5x5",
+    "threshold_factor": 1.1,
+    "min_candidate_pixels": 100,
+    "unet_status": null
+  },
+  "scientific_disclaimer": "SAR dark formations represent areas of dampened capillary surface waves. Low backscatter can be caused by mineral oil spills, but also by natural environmental look-alikes such as biogenic films, low-wind calms, grease ice, or internal waves. Detected regions are candidate anomalies requiring multi-sensor or AIS drift verification.",
+  "image_metadata": {
+    "width_pixels": 648,
+    "height_pixels": 474,
+    "total_pixels": 307152,
+    "original_format": "JPEG",
+    "original_mode": "RGB",
+    "is_display_chip": true,
+    "data_fidelity_note": "8-bit display chip (non-linear tone curve; not calibrated Level-1 backscatter)."
+  },
+  "detection_summary": {
+    "num_candidate_regions": 6,
+    "total_candidate_pixels": 33898,
+    "candidate_area_fraction": 0.11036,
+    "total_estimated_area_km2": null
+  },
+  "spill_location_estimate": null,
+  "georeferencing": {
+    "available": false,
+    "type": "none",
+    "notes": "No georeferencing data provided. Candidate pixel coordinates are retained without geographic projection. Do not treat pixel coordinates as coordinates."
+  },
+  "satellite_metadata": null,
+  "candidates": [
+    {
+      "candidate_id": 1,
+      "classification": "suspected_mineral_oil_slick",
+      "uncertainty_level": "moderate",
+      "scientific_note": "High backscatter dampening with elongated morphology characteristic of oil.",
+      "pixel_count": 5163,
+      "area_fraction": 0.01681,
+      "bounding_box_pixels": [
+        17,
+        18,
+        103,
+        114
+      ],
+      "centroid_pixel": [
+        61.8,
+        64.33
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 87,
+        "width_pixels": 97
+      },
+      "radiometric_stats": {
+        "mean_intensity": 25.76,
+        "min_intensity": 16.46,
+        "std_intensity": 2.91,
+        "contrast_db": 5.7,
+        "local_sea_mean": 95.71
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 420,
+        "compactness": 0.368
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 2,
+      "classification": "suspected_mineral_oil_slick",
+      "uncertainty_level": "moderate",
+      "scientific_note": "High backscatter dampening with elongated morphology characteristic of oil.",
+      "pixel_count": 510,
+      "area_fraction": 0.00166,
+      "bounding_box_pixels": [
+        31,
+        1,
+        69,
+        19
+      ],
+      "centroid_pixel": [
+        48.43,
+        7.81
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 39,
+        "width_pixels": 19
+      },
+      "radiometric_stats": {
+        "mean_intensity": 20.74,
+        "min_intensity": 16.34,
+        "std_intensity": 3.12,
+        "contrast_db": 6.64,
+        "local_sea_mean": 95.71
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 120,
+        "compactness": 0.445
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 3,
+      "classification": "suspected_mineral_oil_slick",
+      "uncertainty_level": "moderate",
+      "scientific_note": "High backscatter dampening with elongated morphology characteristic of oil.",
+      "pixel_count": 761,
+      "area_fraction": 0.00248,
+      "bounding_box_pixels": [
+        163,
+        36,
+        197,
+        75
+      ],
+      "centroid_pixel": [
+        179.94,
+        56.51
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 35,
+        "width_pixels": 40
+      },
+      "radiometric_stats": {
+        "mean_intensity": 26.44,
+        "min_intensity": 18.74,
+        "std_intensity": 2.77,
+        "contrast_db": 5.59,
+        "local_sea_mean": 95.71
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 158,
+        "compactness": 0.383
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 4,
+      "classification": "suspected_mineral_oil_slick",
+      "uncertainty_level": "moderate",
+      "scientific_note": "High backscatter dampening with elongated morphology characteristic of oil.",
+      "pixel_count": 111,
+      "area_fraction": 0.00036,
+      "bounding_box_pixels": [
+        181,
+        151,
+        190,
+        165
+      ],
+      "centroid_pixel": [
+        184.95,
+        157.14
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 10,
+        "width_pixels": 15
+      },
+      "radiometric_stats": {
+        "mean_intensity": 28.71,
+        "min_intensity": 24.58,
+        "std_intensity": 1.8,
+        "contrast_db": 5.23,
+        "local_sea_mean": 95.71
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 56,
+        "compactness": 0.445
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 5,
+      "classification": "suspected_mineral_oil_slick",
+      "uncertainty_level": "moderate",
+      "scientific_note": "High backscatter dampening with elongated morphology characteristic of oil.",
+      "pixel_count": 160,
+      "area_fraction": 0.00052,
+      "bounding_box_pixels": [
+        192,
+        73,
+        213,
+        84
+      ],
+      "centroid_pixel": [
+        202.74,
+        78.2
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 22,
+        "width_pixels": 12
+      },
+      "radiometric_stats": {
+        "mean_intensity": 28.85,
+        "min_intensity": 23.47,
+        "std_intensity": 2.08,
+        "contrast_db": 5.21,
+        "local_sea_mean": 95.71
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 84,
+        "compactness": 0.285
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 6,
+      "classification": "suspected_mineral_oil_slick",
+      "uncertainty_level": "moderate",
+      "scientific_note": "High backscatter dampening with elongated morphology characteristic of oil.",
+      "pixel_count": 27193,
+      "area_fraction": 0.08853,
+      "bounding_box_pixels": [
+        200,
+        1,
+        472,
+        191
+      ],
+      "centroid_pixel": [
+        341.19,
+        67.9
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 273,
+        "width_pixels": 191
+      },
+      "radiometric_stats": {
+        "mean_intensity": 26.85,
+        "min_intensity": 13.3,
+        "std_intensity": 3.6,
+        "contrast_db": 5.52,
+        "local_sea_mean": 95.71
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 2473,
+        "compactness": 0.056
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    }
+  ],
+  "reference_ground_truth": {
+    "evaluation_performed": false,
+    "reference_mask_path": null,
+    "metrics": null
+  },
+  "artifacts": {
+    "mask_path": "outputs\\google_test\\masks\\OILTRACE-GOOLE_OIL_SPILL_mask.png",
+    "overlay_path": "outputs\\google_test\\overlays\\OILTRACE-GOOLE_OIL_SPILL_overlay.png",
+    "comparison_overlay_path": null
+  },
+  "provenance": {
+    "author": "OILTRACE Member 1 (AI-Based Oil Spill Detection)",
+    "dataset_source": null,
+    "dataset_license": null,
+    "notes": "Provenance fields are null when the source dataset is unspecified. See data/real_samples/PROVENANCE.md for real sample terms; see data/generate_samples.py for synthetic fixture parameters.",
+    "target_consumers": [
+      "Member 2 (AIS Vessel Correlation)",
+      "Member 3 (Streamlit Dashboard)"
+    ]
+  }
+}

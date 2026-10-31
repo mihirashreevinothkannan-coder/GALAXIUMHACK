@@ -1,0 +1,1214 @@
+{
+  "contract_version": "1.0",
+  "incident_id": "OILTRACE-SENTINEL1_MKLAB_SAMPLE_01",
+  "source_image": "data\\real_samples\\sentinel1_mklab_sample_01.jpg",
+  "detection_status": "candidate_slick_detected",
+  "detection_method": "classical_sar_backscatter_adaptive",
+  "method_details": {
+    "requested_method": "classical",
+    "speckle_filter": "linear_intensity_multilook_5x5",
+    "threshold_factor": 1.1,
+    "min_candidate_pixels": 100,
+    "unet_status": null
+  },
+  "scientific_disclaimer": "SAR dark formations represent areas of dampened capillary surface waves. Low backscatter can be caused by mineral oil spills, but also by natural environmental look-alikes such as biogenic films, low-wind calms, grease ice, or internal waves. Detected regions are candidate anomalies requiring multi-sensor or AIS drift verification.",
+  "image_metadata": {
+    "width_pixels": 1250,
+    "height_pixels": 650,
+    "total_pixels": 812500,
+    "original_format": "JPEG",
+    "original_mode": "RGB",
+    "is_display_chip": true,
+    "data_fidelity_note": "8-bit display chip (non-linear tone curve; not calibrated Level-1 backscatter)."
+  },
+  "detection_summary": {
+    "num_candidate_regions": 33,
+    "total_candidate_pixels": 79614,
+    "candidate_area_fraction": 0.09799,
+    "total_estimated_area_km2": null
+  },
+  "spill_location_estimate": null,
+  "georeferencing": {
+    "available": false,
+    "type": "none",
+    "notes": "No georeferencing data provided. Candidate pixel coordinates are retained without geographic projection. Do not treat pixel coordinates as coordinates."
+  },
+  "satellite_metadata": null,
+  "candidates": [
+    {
+      "candidate_id": 1,
+      "classification": "lookalike_weak_contrast",
+      "uncertainty_level": "high",
+      "scientific_note": "Faint backscatter dip; likely ambient low-wind calm or biogenic surfactant.",
+      "pixel_count": 505,
+      "area_fraction": 0.00062,
+      "bounding_box_pixels": [
+        1,
+        735,
+        17,
+        781
+      ],
+      "centroid_pixel": [
+        6.67,
+        757.41
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 17,
+        "width_pixels": 47
+      },
+      "radiometric_stats": {
+        "mean_intensity": 77.07,
+        "min_intensity": 65.34,
+        "std_intensity": 3.83,
+        "contrast_db": 2.33,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 138,
+        "compactness": 0.333
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 2,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 36144,
+      "area_fraction": 0.04448,
+      "bounding_box_pixels": [
+        1,
+        771,
+        270,
+        1152
+      ],
+      "centroid_pixel": [
+        103.29,
+        992.97
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 270,
+        "width_pixels": 382
+      },
+      "radiometric_stats": {
+        "mean_intensity": 72.57,
+        "min_intensity": 52.48,
+        "std_intensity": 5.71,
+        "contrast_db": 2.59,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 3768,
+        "compactness": 0.032
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 3,
+      "classification": "lookalike_weak_contrast",
+      "uncertainty_level": "high",
+      "scientific_note": "Faint backscatter dip; likely ambient low-wind calm or biogenic surfactant.",
+      "pixel_count": 137,
+      "area_fraction": 0.00017,
+      "bounding_box_pixels": [
+        59,
+        666,
+        73,
+        682
+      ],
+      "centroid_pixel": [
+        64.73,
+        673.1
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 15,
+        "width_pixels": 17
+      },
+      "radiometric_stats": {
+        "mean_intensity": 78.69,
+        "min_intensity": 71.84,
+        "std_intensity": 3.33,
+        "contrast_db": 2.24,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 78,
+        "compactness": 0.283
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 4,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 192,
+      "area_fraction": 0.00024,
+      "bounding_box_pixels": [
+        60,
+        194,
+        79,
+        213
+      ],
+      "centroid_pixel": [
+        70.62,
+        204.41
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 20,
+        "width_pixels": 20
+      },
+      "radiometric_stats": {
+        "mean_intensity": 78.98,
+        "min_intensity": 66.59,
+        "std_intensity": 3.91,
+        "contrast_db": 2.22,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 94,
+        "compactness": 0.273
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 5,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 3283,
+      "area_fraction": 0.00404,
+      "bounding_box_pixels": [
+        60,
+        645,
+        164,
+        719
+      ],
+      "centroid_pixel": [
+        121.36,
+        682.72
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 105,
+        "width_pixels": 75
+      },
+      "radiometric_stats": {
+        "mean_intensity": 75.44,
+        "min_intensity": 56.88,
+        "std_intensity": 5.27,
+        "contrast_db": 2.42,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 476,
+        "compactness": 0.182
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 6,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 100,
+      "area_fraction": 0.00012,
+      "bounding_box_pixels": [
+        90,
+        153,
+        104,
+        165
+      ],
+      "centroid_pixel": [
+        97.35,
+        159.29
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 15,
+        "width_pixels": 13
+      },
+      "radiometric_stats": {
+        "mean_intensity": 81.02,
+        "min_intensity": 76.43,
+        "std_intensity": 1.84,
+        "contrast_db": 2.11,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 66,
+        "compactness": 0.288
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 7,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 239,
+      "area_fraction": 0.00029,
+      "bounding_box_pixels": [
+        96,
+        237,
+        120,
+        265
+      ],
+      "centroid_pixel": [
+        109.25,
+        250.63
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 25,
+        "width_pixels": 29
+      },
+      "radiometric_stats": {
+        "mean_intensity": 79.95,
+        "min_intensity": 70.22,
+        "std_intensity": 3.25,
+        "contrast_db": 2.17,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 116,
+        "compactness": 0.223
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 8,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 108,
+      "area_fraction": 0.00013,
+      "bounding_box_pixels": [
+        108,
+        142,
+        124,
+        160
+      ],
+      "centroid_pixel": [
+        116.31,
+        151.04
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 17,
+        "width_pixels": 19
+      },
+      "radiometric_stats": {
+        "mean_intensity": 80.64,
+        "min_intensity": 74.43,
+        "std_intensity": 2.37,
+        "contrast_db": 2.13,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 76,
+        "compactness": 0.235
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 9,
+      "classification": "lookalike_weak_contrast",
+      "uncertainty_level": "high",
+      "scientific_note": "Faint backscatter dip; likely ambient low-wind calm or biogenic surfactant.",
+      "pixel_count": 151,
+      "area_fraction": 0.00019,
+      "bounding_box_pixels": [
+        175,
+        737,
+        191,
+        752
+      ],
+      "centroid_pixel": [
+        182.69,
+        746.35
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 17,
+        "width_pixels": 16
+      },
+      "radiometric_stats": {
+        "mean_intensity": 77.99,
+        "min_intensity": 66.2,
+        "std_intensity": 4.28,
+        "contrast_db": 2.27,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 76,
+        "compactness": 0.329
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 10,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 203,
+      "area_fraction": 0.00025,
+      "bounding_box_pixels": [
+        189,
+        753,
+        205,
+        773
+      ],
+      "centroid_pixel": [
+        197.11,
+        764.92
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 17,
+        "width_pixels": 21
+      },
+      "radiometric_stats": {
+        "mean_intensity": 79.06,
+        "min_intensity": 72.97,
+        "std_intensity": 2.83,
+        "contrast_db": 2.22,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 80,
+        "compactness": 0.399
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 11,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 354,
+      "area_fraction": 0.00044,
+      "bounding_box_pixels": [
+        195,
+        713,
+        214,
+        748
+      ],
+      "centroid_pixel": [
+        204.85,
+        732.18
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 20,
+        "width_pixels": 36
+      },
+      "radiometric_stats": {
+        "mean_intensity": 79.73,
+        "min_intensity": 68.48,
+        "std_intensity": 2.92,
+        "contrast_db": 2.18,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 172,
+        "compactness": 0.15
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 12,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 1374,
+      "area_fraction": 0.00169,
+      "bounding_box_pixels": [
+        207,
+        421,
+        255,
+        508
+      ],
+      "centroid_pixel": [
+        227.0,
+        463.13
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 49,
+        "width_pixels": 88
+      },
+      "radiometric_stats": {
+        "mean_intensity": 80.02,
+        "min_intensity": 68.86,
+        "std_intensity": 3.06,
+        "contrast_db": 2.16,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 510,
+        "compactness": 0.066
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 13,
+      "classification": "lookalike_weak_contrast",
+      "uncertainty_level": "high",
+      "scientific_note": "Faint backscatter dip; likely ambient low-wind calm or biogenic surfactant.",
+      "pixel_count": 178,
+      "area_fraction": 0.00022,
+      "bounding_box_pixels": [
+        210,
+        1208,
+        247,
+        1216
+      ],
+      "centroid_pixel": [
+        230.29,
+        1211.66
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 38,
+        "width_pixels": 9
+      },
+      "radiometric_stats": {
+        "mean_intensity": 79.03,
+        "min_intensity": 69.37,
+        "std_intensity": 2.9,
+        "contrast_db": 2.22,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 108,
+        "compactness": 0.192
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 14,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 1243,
+      "area_fraction": 0.00153,
+      "bounding_box_pixels": [
+        211,
+        1113,
+        272,
+        1162
+      ],
+      "centroid_pixel": [
+        237.29,
+        1132.27
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 62,
+        "width_pixels": 50
+      },
+      "radiometric_stats": {
+        "mean_intensity": 77.14,
+        "min_intensity": 62.22,
+        "std_intensity": 4.65,
+        "contrast_db": 2.32,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 324,
+        "compactness": 0.149
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 15,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 14756,
+      "area_fraction": 0.01816,
+      "bounding_box_pixels": [
+        228,
+        120,
+        425,
+        342
+      ],
+      "centroid_pixel": [
+        318.53,
+        250.37
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 198,
+        "width_pixels": 223
+      },
+      "radiometric_stats": {
+        "mean_intensity": 75.46,
+        "min_intensity": 58.04,
+        "std_intensity": 4.82,
+        "contrast_db": 2.42,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 2164,
+        "compactness": 0.04
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 16,
+      "classification": "lookalike_weak_contrast",
+      "uncertainty_level": "high",
+      "scientific_note": "Faint backscatter dip; likely ambient low-wind calm or biogenic surfactant.",
+      "pixel_count": 126,
+      "area_fraction": 0.00016,
+      "bounding_box_pixels": [
+        230,
+        302,
+        249,
+        317
+      ],
+      "centroid_pixel": [
+        238.15,
+        310.34
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 20,
+        "width_pixels": 16
+      },
+      "radiometric_stats": {
+        "mean_intensity": 80.86,
+        "min_intensity": 75.45,
+        "std_intensity": 2.07,
+        "contrast_db": 2.12,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 86,
+        "compactness": 0.214
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 17,
+      "classification": "lookalike_weak_contrast",
+      "uncertainty_level": "high",
+      "scientific_note": "Faint backscatter dip; likely ambient low-wind calm or biogenic surfactant.",
+      "pixel_count": 314,
+      "area_fraction": 0.00039,
+      "bounding_box_pixels": [
+        238,
+        1017,
+        262,
+        1035
+      ],
+      "centroid_pixel": [
+        249.31,
+        1025.34
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 25,
+        "width_pixels": 19
+      },
+      "radiometric_stats": {
+        "mean_intensity": 78.24,
+        "min_intensity": 69.52,
+        "std_intensity": 3.29,
+        "contrast_db": 2.26,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 92,
+        "compactness": 0.466
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 18,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 740,
+      "area_fraction": 0.00091,
+      "bounding_box_pixels": [
+        258,
+        342,
+        297,
+        391
+      ],
+      "centroid_pixel": [
+        277.05,
+        367.24
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 40,
+        "width_pixels": 50
+      },
+      "radiometric_stats": {
+        "mean_intensity": 78.85,
+        "min_intensity": 68.48,
+        "std_intensity": 3.44,
+        "contrast_db": 2.23,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 242,
+        "compactness": 0.159
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 19,
+      "classification": "lookalike_weak_contrast",
+      "uncertainty_level": "high",
+      "scientific_note": "Faint backscatter dip; likely ambient low-wind calm or biogenic surfactant.",
+      "pixel_count": 1461,
+      "area_fraction": 0.0018,
+      "bounding_box_pixels": [
+        285,
+        1085,
+        351,
+        1126
+      ],
+      "centroid_pixel": [
+        308.39,
+        1103.97
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 67,
+        "width_pixels": 42
+      },
+      "radiometric_stats": {
+        "mean_intensity": 75.99,
+        "min_intensity": 63.84,
+        "std_intensity": 3.91,
+        "contrast_db": 2.39,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 254,
+        "compactness": 0.285
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 20,
+      "classification": "lookalike_weak_contrast",
+      "uncertainty_level": "high",
+      "scientific_note": "Faint backscatter dip; likely ambient low-wind calm or biogenic surfactant.",
+      "pixel_count": 122,
+      "area_fraction": 0.00015,
+      "bounding_box_pixels": [
+        296,
+        1032,
+        314,
+        1043
+      ],
+      "centroid_pixel": [
+        306.9,
+        1036.84
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 19,
+        "width_pixels": 12
+      },
+      "radiometric_stats": {
+        "mean_intensity": 78.76,
+        "min_intensity": 72.97,
+        "std_intensity": 2.96,
+        "contrast_db": 2.23,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 72,
+        "compactness": 0.296
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 21,
+      "classification": "lookalike_weak_contrast",
+      "uncertainty_level": "high",
+      "scientific_note": "Faint backscatter dip; likely ambient low-wind calm or biogenic surfactant.",
+      "pixel_count": 459,
+      "area_fraction": 0.00056,
+      "bounding_box_pixels": [
+        302,
+        1054,
+        343,
+        1086
+      ],
+      "centroid_pixel": [
+        321.62,
+        1070.99
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 42,
+        "width_pixels": 33
+      },
+      "radiometric_stats": {
+        "mean_intensity": 77.82,
+        "min_intensity": 63.19,
+        "std_intensity": 4.04,
+        "contrast_db": 2.28,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 174,
+        "compactness": 0.191
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 22,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 466,
+      "area_fraction": 0.00057,
+      "bounding_box_pixels": [
+        344,
+        95,
+        372,
+        139
+      ],
+      "centroid_pixel": [
+        357.77,
+        115.05
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 29,
+        "width_pixels": 45
+      },
+      "radiometric_stats": {
+        "mean_intensity": 75.6,
+        "min_intensity": 62.67,
+        "std_intensity": 4.12,
+        "contrast_db": 2.41,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 154,
+        "compactness": 0.247
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 23,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 534,
+      "area_fraction": 0.00066,
+      "bounding_box_pixels": [
+        351,
+        600,
+        375,
+        637
+      ],
+      "centroid_pixel": [
+        361.85,
+        617.56
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 25,
+        "width_pixels": 38
+      },
+      "radiometric_stats": {
+        "mean_intensity": 77.31,
+        "min_intensity": 64.95,
+        "std_intensity": 3.93,
+        "contrast_db": 2.31,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 158,
+        "compactness": 0.269
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 24,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 102,
+      "area_fraction": 0.00013,
+      "bounding_box_pixels": [
+        368,
+        294,
+        380,
+        305
+      ],
+      "centroid_pixel": [
+        373.67,
+        300.38
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 13,
+        "width_pixels": 12
+      },
+      "radiometric_stats": {
+        "mean_intensity": 76.38,
+        "min_intensity": 68.93,
+        "std_intensity": 4.0,
+        "contrast_db": 2.36,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 54,
+        "compactness": 0.44
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 25,
+      "classification": "lookalike_weak_contrast",
+      "uncertainty_level": "high",
+      "scientific_note": "Faint backscatter dip; likely ambient low-wind calm or biogenic surfactant.",
+      "pixel_count": 115,
+      "area_fraction": 0.00014,
+      "bounding_box_pixels": [
+        379,
+        1195,
+        395,
+        1211
+      ],
+      "centroid_pixel": [
+        387.08,
+        1203.56
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 17,
+        "width_pixels": 17
+      },
+      "radiometric_stats": {
+        "mean_intensity": 78.64,
+        "min_intensity": 72.41,
+        "std_intensity": 2.78,
+        "contrast_db": 2.24,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 72,
+        "compactness": 0.279
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 26,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 13378,
+      "area_fraction": 0.01647,
+      "bounding_box_pixels": [
+        397,
+        572,
+        564,
+        912
+      ],
+      "centroid_pixel": [
+        477.19,
+        740.28
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 168,
+        "width_pixels": 341
+      },
+      "radiometric_stats": {
+        "mean_intensity": 77.37,
+        "min_intensity": 60.38,
+        "std_intensity": 4.19,
+        "contrast_db": 2.31,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 2154,
+        "compactness": 0.036
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 27,
+      "classification": "lookalike_weak_contrast",
+      "uncertainty_level": "high",
+      "scientific_note": "Faint backscatter dip; likely ambient low-wind calm or biogenic surfactant.",
+      "pixel_count": 124,
+      "area_fraction": 0.00015,
+      "bounding_box_pixels": [
+        400,
+        250,
+        425,
+        263
+      ],
+      "centroid_pixel": [
+        413.52,
+        255.79
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 26,
+        "width_pixels": 14
+      },
+      "radiometric_stats": {
+        "mean_intensity": 75.59,
+        "min_intensity": 66.66,
+        "std_intensity": 4.46,
+        "contrast_db": 2.41,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 84,
+        "compactness": 0.221
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 28,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 135,
+      "area_fraction": 0.00017,
+      "bounding_box_pixels": [
+        433,
+        184,
+        443,
+        201
+      ],
+      "centroid_pixel": [
+        438.29,
+        192.28
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 11,
+        "width_pixels": 18
+      },
+      "radiometric_stats": {
+        "mean_intensity": 76.72,
+        "min_intensity": 65.58,
+        "std_intensity": 4.11,
+        "contrast_db": 2.35,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 72,
+        "compactness": 0.327
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 29,
+      "classification": "shadow_suspect",
+      "uncertainty_level": "high",
+      "scientific_note": "Dark patch adjacent to a bright SAR feature (ship, coastline, or terrain). Likely radar layover shadow or JPEG contrast artifact, not an open-sea oil slick. Requires independent sensor corroboration before any slick attribution.",
+      "pixel_count": 1939,
+      "area_fraction": 0.00239,
+      "bounding_box_pixels": [
+        434,
+        223,
+        535,
+        287
+      ],
+      "centroid_pixel": [
+        487.56,
+        252.63
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 102,
+        "width_pixels": 65
+      },
+      "radiometric_stats": {
+        "mean_intensity": 76.65,
+        "min_intensity": 58.66,
+        "std_intensity": 5.34,
+        "contrast_db": 2.35,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 586,
+        "compactness": 0.071
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 30,
+      "classification": "lookalike_weak_contrast",
+      "uncertainty_level": "high",
+      "scientific_note": "Faint backscatter dip; likely ambient low-wind calm or biogenic surfactant.",
+      "pixel_count": 129,
+      "area_fraction": 0.00016,
+      "bounding_box_pixels": [
+        450,
+        115,
+        463,
+        132
+      ],
+      "centroid_pixel": [
+        455.52,
+        122.01
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 14,
+        "width_pixels": 18
+      },
+      "radiometric_stats": {
+        "mean_intensity": 74.37,
+        "min_intensity": 60.46,
+        "std_intensity": 6.17,
+        "contrast_db": 2.48,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 70,
+        "compactness": 0.331
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 31,
+      "classification": "lookalike_weak_contrast",
+      "uncertainty_level": "high",
+      "scientific_note": "Faint backscatter dip; likely ambient low-wind calm or biogenic surfactant.",
+      "pixel_count": 177,
+      "area_fraction": 0.00022,
+      "bounding_box_pixels": [
+        544,
+        1126,
+        558,
+        1143
+      ],
+      "centroid_pixel": [
+        550.1,
+        1133.99
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 15,
+        "width_pixels": 18
+      },
+      "radiometric_stats": {
+        "mean_intensity": 79.26,
+        "min_intensity": 67.43,
+        "std_intensity": 3.52,
+        "contrast_db": 2.2,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 70,
+        "compactness": 0.454
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 32,
+      "classification": "lookalike_weak_contrast",
+      "uncertainty_level": "high",
+      "scientific_note": "Faint backscatter dip; likely ambient low-wind calm or biogenic surfactant.",
+      "pixel_count": 117,
+      "area_fraction": 0.00014,
+      "bounding_box_pixels": [
+        615,
+        34,
+        632,
+        42
+      ],
+      "centroid_pixel": [
+        623.46,
+        37.69
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 18,
+        "width_pixels": 9
+      },
+      "radiometric_stats": {
+        "mean_intensity": 78.28,
+        "min_intensity": 66.27,
+        "std_intensity": 3.74,
+        "contrast_db": 2.26,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 58,
+        "compactness": 0.437
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    },
+    {
+      "candidate_id": 33,
+      "classification": "suspected_mineral_oil_slick",
+      "uncertainty_level": "moderate",
+      "scientific_note": "High backscatter dampening with elongated morphology characteristic of oil.",
+      "pixel_count": 209,
+      "area_fraction": 0.00026,
+      "bounding_box_pixels": [
+        626,
+        273,
+        648,
+        287
+      ],
+      "centroid_pixel": [
+        639.14,
+        280.53
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 23,
+        "width_pixels": 15
+      },
+      "radiometric_stats": {
+        "mean_intensity": 70.95,
+        "min_intensity": 52.19,
+        "std_intensity": 8.88,
+        "contrast_db": 2.69,
+        "local_sea_mean": 131.66
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 88,
+        "compactness": 0.339
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    }
+  ],
+  "reference_ground_truth": {
+    "evaluation_performed": false,
+    "reference_mask_path": null,
+    "metrics": null
+  },
+  "artifacts": {
+    "mask_path": "outputs\\real_eval\\masks\\OILTRACE-SENTINEL1_MKLAB_SAMPLE_01_mask.png",
+    "overlay_path": "outputs\\real_eval\\overlays\\OILTRACE-SENTINEL1_MKLAB_SAMPLE_01_overlay.png",
+    "comparison_overlay_path": null
+  },
+  "provenance": {
+    "author": "OILTRACE Member 1 (AI-Based Oil Spill Detection)",
+    "dataset_source": "MKLab-ITI Oil Spill Detection Dataset (Krestenitis et al., Remote Sensing 2019, doi:10.3390/rs11151762)",
+    "dataset_license": "Access-on-request for non-commercial research only (m4d.iti.gr/oil-spill-detection-dataset). See data/real_samples/PROVENANCE.md.",
+    "notes": "Provenance fields are null when the source dataset is unspecified. See data/real_samples/PROVENANCE.md for real sample terms; see data/generate_samples.py for synthetic fixture parameters.",
+    "target_consumers": [
+      "Member 2 (AIS Vessel Correlation)",
+      "Member 3 (Streamlit Dashboard)"
+    ]
+  }
+}

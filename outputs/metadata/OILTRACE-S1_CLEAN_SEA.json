@@ -1,0 +1,66 @@
+{
+  "contract_version": "1.0",
+  "incident_id": "OILTRACE-S1_CLEAN_SEA",
+  "source_image": "data\\samples\\s1_clean_sea.png",
+  "detection_status": "no_slick_detected",
+  "detection_method": "classical_sar_backscatter_adaptive",
+  "method_details": {
+    "requested_method": "classical",
+    "speckle_filter": "linear_intensity_multilook_5x5",
+    "threshold_factor": 1.1,
+    "min_candidate_pixels": 50,
+    "unet_status": null
+  },
+  "scientific_disclaimer": "SAR dark formations represent areas of dampened capillary surface waves. Low backscatter can be caused by mineral oil spills, but also by natural environmental look-alikes such as biogenic films, low-wind calms, grease ice, or internal waves. Detected regions are candidate anomalies requiring multi-sensor or AIS drift verification.",
+  "image_metadata": {
+    "width_pixels": 800,
+    "height_pixels": 600,
+    "total_pixels": 480000,
+    "original_format": "PNG",
+    "original_mode": "L",
+    "is_display_chip": true,
+    "data_fidelity_note": "8-bit display chip (non-linear tone curve; not calibrated Level-1 backscatter)."
+  },
+  "detection_summary": {
+    "num_candidate_regions": 0,
+    "total_candidate_pixels": 0,
+    "candidate_area_fraction": 0.0,
+    "total_estimated_area_km2": 0
+  },
+  "spill_location_estimate": null,
+  "georeferencing": {
+    "available": true,
+    "type": "affine_grid",
+    "notes": "Negative control tile representing ambient open ocean"
+  },
+  "satellite_metadata": {
+    "satellite": "SENTINEL-1A",
+    "sensor_mode": "IW_GRDH",
+    "polarization": "VV",
+    "product_id": "S1A_IW_GRDH_1SDV_20200117T001541_CLEAN",
+    "acquisition_timestamp_utc": "2020-01-17T00:15:41Z",
+    "location_name": "Open Water, Bay of Campeche, Gulf of Mexico",
+    "utm_zone": "15Q"
+  },
+  "candidates": [],
+  "reference_ground_truth": {
+    "evaluation_performed": false,
+    "reference_mask_path": null,
+    "metrics": null
+  },
+  "artifacts": {
+    "mask_path": "outputs\\masks\\OILTRACE-S1_CLEAN_SEA_mask.png",
+    "overlay_path": "outputs\\overlays\\OILTRACE-S1_CLEAN_SEA_overlay.png",
+    "comparison_overlay_path": null
+  },
+  "provenance": {
+    "author": "OILTRACE Member 1 (AI-Based Oil Spill Detection)",
+    "dataset_source": null,
+    "dataset_license": null,
+    "notes": "Provenance fields are null when the source dataset is unspecified. See data/real_samples/PROVENANCE.md for real sample terms; see data/generate_samples.py for synthetic fixture parameters.",
+    "target_consumers": [
+      "Member 2 (AIS Vessel Correlation)",
+      "Member 3 (Streamlit Dashboard)"
+    ]
+  }
+}

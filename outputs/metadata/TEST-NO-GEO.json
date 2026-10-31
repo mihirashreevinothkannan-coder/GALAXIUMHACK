@@ -1,0 +1,89 @@
+{
+  "contract_version": "1.0",
+  "incident_id": "TEST-NO-GEO",
+  "source_image": "data\\samples\\s1_cantarell_slick.png",
+  "detection_status": "candidate_slick_detected",
+  "detection_method": "classical_sar_backscatter_adaptive",
+  "method_details": {
+    "requested_method": "classical",
+    "speckle_filter": "linear_intensity_multilook_5x5",
+    "threshold_factor": 1.1,
+    "min_candidate_pixels": 50,
+    "unet_status": null
+  },
+  "scientific_disclaimer": "SAR dark formations represent areas of dampened capillary surface waves. Low backscatter can be caused by mineral oil spills, but also by natural environmental look-alikes such as biogenic films, low-wind calms, grease ice, or internal waves. Detected regions are candidate anomalies requiring multi-sensor or AIS drift verification.",
+  "image_metadata": {
+    "width_pixels": 800,
+    "height_pixels": 600,
+    "total_pixels": 480000
+  },
+  "detection_summary": {
+    "num_candidate_regions": 1,
+    "total_candidate_pixels": 38985,
+    "candidate_area_fraction": 0.08122,
+    "total_estimated_area_km2": null
+  },
+  "spill_location_estimate": null,
+  "georeferencing": {
+    "available": false,
+    "type": "none",
+    "notes": "No georeferencing data provided. Candidate pixel coordinates are retained without geographic projection. Do not treat pixel coordinates as coordinates."
+  },
+  "satellite_metadata": null,
+  "candidates": [
+    {
+      "candidate_id": 1,
+      "classification": "suspected_mineral_oil_slick",
+      "uncertainty_level": "moderate",
+      "scientific_note": "High backscatter dampening with elongated morphology characteristic of oil.",
+      "pixel_count": 38985,
+      "area_fraction": 0.08122,
+      "bounding_box_pixels": [
+        179,
+        201,
+        441,
+        656
+      ],
+      "centroid_pixel": [
+        322.33,
+        422.21
+      ],
+      "bbox_dimensions": {
+        "height_pixels": 263,
+        "width_pixels": 456
+      },
+      "radiometric_stats": {
+        "mean_intensity": 18.94,
+        "min_intensity": 13.95,
+        "std_intensity": 3.0,
+        "contrast_db": 4.08,
+        "local_sea_mean": 48.43
+      },
+      "shape_stats": {
+        "estimated_perimeter_pixels": 1762,
+        "compactness": 0.158
+      },
+      "geographic_coordinates": null,
+      "bounding_box_geo": null
+    }
+  ],
+  "reference_ground_truth": {
+    "evaluation_performed": false,
+    "reference_mask_path": null,
+    "metrics": null
+  },
+  "artifacts": {
+    "mask_path": "outputs\\masks\\TEST-NO-GEO_mask.png",
+    "overlay_path": "outputs\\overlays\\TEST-NO-GEO_overlay.png",
+    "comparison_overlay_path": null
+  },
+  "provenance": {
+    "author": "OILTRACE Member 1 (AI-Based Oil Spill Detection)",
+    "benchmark_dataset": "Garcia-INPE Sentinel-1 Oil Spill Dataset",
+    "dataset_license": "CC BY 4.0",
+    "target_consumers": [
+      "Member 2 (AIS Vessel Correlation)",
+      "Member 3 (Streamlit Dashboard)"
+    ]
+  }
+}

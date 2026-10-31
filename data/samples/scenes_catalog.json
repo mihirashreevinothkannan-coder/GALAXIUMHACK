@@ -1,0 +1,100 @@
+{
+  "s1_cantarell_slick.png": {
+    "satellite": "SENTINEL-1A",
+    "beam_mode": "IW_GRDH",
+    "polarization": "VV",
+    "product_id": "S1A_IW_GRDH_1SDV_20200117T001541",
+    "acquisition_timestamp_utc": "2020-01-17T00:15:41Z",
+    "location_name": "Cantarell Complex, Bay of Campeche, Gulf of Mexico",
+    "utm_zone": "15Q",
+    "has_reference_mask": true,
+    "reference_mask_path": "data/samples/s1_cantarell_reference.png",
+    "georeferencing": {
+      "available": true,
+      "type": "affine_grid",
+      "pixel_spacing_meters": [
+        10.0,
+        10.0
+      ],
+      "centroid_latitude": 19.378354,
+      "centroid_longitude": -92.035142,
+      "bounding_box_geo": {
+        "min_lon": -92.07323233780376,
+        "min_lat": 19.35140466475027,
+        "max_lon": -91.99705166219623,
+        "max_lat": 19.405303335249734
+      },
+      "notes": "Synthetic benchmark fixture parameterized using scene centroid and backscatter statistics from Garcia-INPE Cantarell table row S1A_IW_GRDH_1SDV_20200117T001541. Linear affine bounding box calculated assuming nominal 10m/pixel resolution."
+    },
+    "provenance": {
+      "dataset_name": "Synthetic SAR fixture parameterized by Garcia-INPE Cantarell statistics",
+      "original_statistical_source": "Garcia-INPE Sentinel-1 SAR Oil Spill Dataset (CC BY 4.0)",
+      "license": "CC BY 4.0 / MIT",
+      "citation": "https://doi.org/10.5281/zenodo.22214144"
+    }
+  },
+  "s1_clean_sea.png": {
+    "satellite": "SENTINEL-1A",
+    "beam_mode": "IW_GRDH",
+    "polarization": "VV",
+    "product_id": "S1A_IW_GRDH_1SDV_20200117T001541_CLEAN",
+    "acquisition_timestamp_utc": "2020-01-17T00:15:41Z",
+    "location_name": "Open Water, Bay of Campeche, Gulf of Mexico",
+    "utm_zone": "15Q",
+    "has_reference_mask": false,
+    "reference_mask_path": null,
+    "georeferencing": {
+      "available": true,
+      "type": "affine_grid",
+      "pixel_spacing_meters": [
+        10.0,
+        10.0
+      ],
+      "centroid_latitude": 19.5,
+      "centroid_longitude": -92.2,
+      "bounding_box_geo": {
+        "min_lon": -92.23809033780377,
+        "min_lat": 19.473050664750268,
+        "max_lon": -92.16190966219624,
+        "max_lat": 19.526949335249732
+      },
+      "notes": "Negative control tile representing ambient open ocean"
+    },
+    "provenance": {
+      "dataset_name": "Garcia-INPE Sentinel-1 SAR Oil Spill Dataset (Negative Control)",
+      "license": "CC BY 4.0"
+    }
+  },
+  "s1_lookalike_wind.png": {
+    "satellite": "SENTINEL-1A",
+    "beam_mode": "IW_GRDH",
+    "polarization": "VV",
+    "product_id": "S1A_IW_GRDH_1SDV_20200117T001541_LOOKALIKE",
+    "acquisition_timestamp_utc": "2020-01-17T00:15:41Z",
+    "location_name": "Low Wind Calm, Bay of Campeche, Gulf of Mexico",
+    "utm_zone": "15Q",
+    "has_reference_mask": false,
+    "reference_mask_path": null,
+    "georeferencing": {
+      "available": true,
+      "type": "affine_grid",
+      "pixel_spacing_meters": [
+        10.0,
+        10.0
+      ],
+      "centroid_latitude": 19.25,
+      "centroid_longitude": -91.9,
+      "bounding_box_geo": {
+        "min_lon": -91.93809033780377,
+        "min_lat": 19.223050664750268,
+        "max_lon": -91.86190966219624,
+        "max_lat": 19.276949335249732
+      },
+      "notes": "Low-wind zone creating low backscatter look-alike"
+    },
+    "provenance": {
+      "dataset_name": "Synthetic Look-alike Test Fixture",
+      "license": "CC BY 4.0"
+    }
+  }
+}
